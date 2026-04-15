@@ -58,6 +58,8 @@ localparam
 integer state = INIT;
 reg [7:0] tx_data;
 integer bit_count;
+reg start_tx = 1'b0;
+
 always @(posedge rx_clk) begin
     case(state)
         INIT: begin
@@ -103,8 +105,6 @@ always @(posedge Clk) begin
     end
     pass <= ready_count == 1 && rx_data_correct;
 end
-
-reg start_tx = 1'b0;
 
 // Write Checker
 initial begin
