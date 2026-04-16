@@ -1,5 +1,3 @@
-# lecture-homework-week03-r
-UART Rx
 # Lecture Homework Week 03 - Thursday
 
 For this lecture homework, you will **create** a module to receive a UART byte in 8N1 format.
